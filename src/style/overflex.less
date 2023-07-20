@@ -1,0 +1,38 @@
+// flex method
+/*
+flex_default
+flex_center
+
+ */
+
+// flex class
+@card:card;
+// flex variables
+
+@direction:column; // default: row
+@direction_row:row;
+@position_cen:center;
+@align_type1:space-between;
+@align_type2:space-around;
+
+@flex_start:flex-start;
+// flex
+.flex_default{
+  display: flex;
+}
+.flex_center(@dir:@direction_row,@row:@position_cen,@col:@position_cen){
+  &:extend(.flex_default);
+  flex-direction: @dir;
+  justify-content: @row;
+  align-items: @col;
+}
+
+.@{card}{
+  .flex_center(@row:@align_type1);
+  .a{
+
+  }
+  .b{
+    .flex_center(@dir:@direction,@row: @align_type1)
+  }
+}

@@ -1,0 +1,21 @@
+// usual class
+@reset:style_reset;
+
+
+.@{reset}{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.resetAll(){
+  &:extend(.style_reset);
+}
+
+.mouse_hover(@type:pointer,@fontC:skyblue){
+  cursor: @type;
+  &:hover{
+    color: @fontC;
+  }
+}
+
+
