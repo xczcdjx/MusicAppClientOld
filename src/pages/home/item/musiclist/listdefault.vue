@@ -1,7 +1,7 @@
 <template>
 <div>
 <singerlist-top :itemlist="playlist"/>
-    <singerlist-bot :item-m="itemlist" :subscribed-count="subscribedCount"/>
+<singerlist-bot :item-m="itemlist" :subscribed-count="subscribedCount"/>
 </div>
 </template>
 

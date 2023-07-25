@@ -48,7 +48,7 @@
         >
             <footmusic v-show="Mshow&&route.meta.status" ref="controlBtn"/>
         </transition>
-        <!--歌词面板-->
+        <!--音乐列表面板-->
         <van-popup
             v-model:show="musiclistS"
             round

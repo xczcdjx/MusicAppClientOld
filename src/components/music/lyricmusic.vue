@@ -368,13 +368,10 @@ const iconEvent = (i) => {
         .progress {
             width: 100%;
             padding: 10px;
-
             > span {
                 font-size: 25px;
             }
-
             .flex_center(@row: @align_type1);
-
             input[type='range'] {
                 width: 80%;
                 height: 4px;
